@@ -1,0 +1,7 @@
+@import '@/styles/variables';
+@import '@/styles/normalize';
+
+body {
+	background-color: $dark-color-500;
+	color: $white;
+}
