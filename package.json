@@ -23,9 +23,17 @@
     "url": "https://github.com/alisher134"
   },
   "dependencies": {
-    "next": "14.2.15",
+    "@hookform/resolvers": "^3.9.0",
+    "clsx": "^2.1.1",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.1",
+    "next": "^14.2.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^4.0.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",

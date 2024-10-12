@@ -1,0 +1,29 @@
+@import '@/styles/variables';
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+
+	.button {
+		width: 100%;
+		text-transform: uppercase;
+	}
+
+	.toggle {
+		button {
+			outline: none;
+			border: none;
+			background: transparent;
+			color: $primary-color;
+			transition: color 250ms ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				color: $primary-hover-color;
+			}
+		}
+	}
+}
