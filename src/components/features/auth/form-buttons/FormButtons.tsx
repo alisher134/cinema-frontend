@@ -5,30 +5,31 @@ import styles from './FormButtons.module.scss';
 interface FormButtonsProps {
 	isLogin: boolean;
 	setType: (value: string) => void;
+	isLoading: boolean;
 }
 
-export const FormButtons = ({ isLogin, setType }: FormButtonsProps) => {
+export const FormButtons = ({
+	isLogin,
+	setType,
+	isLoading
+}: FormButtonsProps) => {
 	return (
 		<div className={styles.buttons}>
-			<Button type='submit' className={styles.button}>
+			<Button type='submit' className={styles.button} disabled={isLoading}>
 				{isLogin ? 'Войти' : 'Зарегистрироваться'}
 			</Button>
 
-			{isLogin ? (
-				<p className={styles.toggle}>
-					Нет аккаунта?
-					<button type='button' onClick={() => setType(EnumAuthType.REGISTER)}>
-						Регистрация
-					</button>
-				</p>
-			) : (
-				<p className={styles.toggle}>
-					Уже есть аккаунт?
-					<button type='button' onClick={() => setType(EnumAuthType.LOGIN)}>
-						Войти
-					</button>
-				</p>
-			)}
+			<p className={styles.toggle}>
+				{isLogin ? 'Нет аккаунта?' : 'Уже есть аккаунт?'}
+				<button
+					type='button'
+					onClick={() =>
+						setType(isLogin ? EnumAuthType.REGISTER : EnumAuthType.LOGIN)
+					}
+				>
+					{isLogin ? 'Регистрация' : 'Войти'}
+				</button>
+			</p>
 		</div>
 	);
 };

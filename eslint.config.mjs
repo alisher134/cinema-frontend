@@ -27,11 +27,12 @@ export default tseslint.config(
 			'react/react-in-jsx-scope': 'off',
 			'@typescript-eslint/explicit-function-return-type': 'off',
 			'@typescript-eslint/explicit-module-boundary-types': 'off',
-			'no-use-before-define': [0],
-			'@typescript-eslint/no-use-before-define': [1],
+			'no-use-before-define': 'off',
+			'@typescript-eslint/no-use-before-define': 'off',
 			'@typescript-eslint/no-explicit-any': 'warn',
 			'@typescript-eslint/no-var-requires': 'warn',
 			'@typescript-eslint/no-empty-object-type': 'off',
+			'@typescript-eslint/no-unused-expressions': 'off',
 			'react-refresh/only-export-components': [
 				'warn',
 				{ allowConstantExport: true }

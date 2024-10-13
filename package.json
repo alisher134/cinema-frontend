@@ -1,57 +1,62 @@
 {
-  "name": "cinema-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "eslint": "eslint .",
-    "eslint:fix": "eslint . --fix",
-    "prettier": "prettier --check **/*.{ts,tsx,js}",
-    "prettier:fix": "prettier --write **/*.{ts,tsx,js}",
-    "stylelint": "stylelint \"**/*.scss\"",
-    "stylelint:fix": "stylelint \"**/*.scss\" --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alisher134/cinema-frontend.git"
-  },
-  "author": {
-    "name": "Alisher Rakhmanov",
-    "email": "alisherrakhmanov134@gmail.com",
-    "url": "https://github.com/alisher134"
-  },
-  "dependencies": {
-    "@hookform/resolvers": "^3.9.0",
-    "clsx": "^2.1.1",
-    "css-loader": "^7.1.2",
-    "mini-css-extract-plugin": "^2.9.1",
-    "next": "^14.2.15",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-hook-form": "^7.53.0",
-    "sass-loader": "^16.0.2",
-    "style-loader": "^4.0.0",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.12.0",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^9.12.0",
-    "eslint-config-next": "14.2.15",
-    "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.12",
-    "globals": "^15.11.0",
-    "prettier": "^3.3.3",
-    "sass": "^1.79.5",
-    "stylelint": "^16.10.0",
-    "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-order": "^6.0.4",
-    "typescript": "^5",
-    "typescript-eslint": "^8.8.1"
-  }
+	"name": "cinema-frontend",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"eslint": "eslint .",
+		"eslint:fix": "eslint . --fix",
+		"prettier": "prettier --check **/*.{ts,tsx,js}",
+		"prettier:fix": "prettier --write **/*.{ts,tsx,js}",
+		"stylelint": "stylelint \"**/*.scss\"",
+		"stylelint:fix": "stylelint \"**/*.scss\" --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alisher134/cinema-frontend.git"
+	},
+	"author": {
+		"name": "Alisher Rakhmanov",
+		"email": "alisherrakhmanov134@gmail.com",
+		"url": "https://github.com/alisher134"
+	},
+	"dependencies": {
+		"@hookform/resolvers": "^3.9.0",
+		"@tanstack/react-query": "^5.59.13",
+		"axios": "^1.7.7",
+		"clsx": "^2.1.1",
+		"css-loader": "^7.1.2",
+		"jose": "^5.9.4",
+		"js-cookie": "^3.0.5",
+		"mini-css-extract-plugin": "^2.9.1",
+		"next": "^14.2.15",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-hook-form": "^7.53.0",
+		"sass-loader": "^16.0.2",
+		"style-loader": "^4.0.0",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.12.0",
+		"@types/js-cookie": "^3.0.6",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^9.12.0",
+		"eslint-config-next": "14.2.15",
+		"eslint-plugin-react": "^7.37.1",
+		"eslint-plugin-react-hooks": "^5.0.0",
+		"eslint-plugin-react-refresh": "^0.4.12",
+		"globals": "^15.11.0",
+		"prettier": "^3.3.3",
+		"sass": "^1.79.5",
+		"stylelint": "^16.10.0",
+		"stylelint-config-standard-scss": "^13.1.0",
+		"stylelint-order": "^6.0.4",
+		"typescript": "^5",
+		"typescript-eslint": "^8.8.1"
+	}
 }

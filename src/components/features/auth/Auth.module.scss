@@ -6,12 +6,21 @@
 
 	.form {
 		&_header {
+			position: relative;
 			margin-bottom: 35px;
 			text-align: center;
 
 			.subheading {
 				color: $gray-color-100;
 				font-size: 15px;
+			}
+
+			.error {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -45px;
+				color: $red-color;
 			}
 		}
 

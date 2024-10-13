@@ -7,12 +7,21 @@ import { FormFields } from './FormFields';
 import { useAuth } from './useAuth';
 
 export const Auth = () => {
-	const { errors, registerInput, type, setType } = useAuth();
+	const {
+		errors,
+		registerInput,
+		type,
+		setType,
+		handleSubmit,
+		handleClick,
+		errorMessage,
+		isPending
+	} = useAuth();
 	const isLogin = type === EnumAuthType.LOGIN;
 
 	return (
 		<div className={styles.auth}>
-			<form className={styles.form}>
+			<form onSubmit={handleSubmit(handleClick)} className={styles.form}>
 				<div className={styles.form_header}>
 					<h1 className={styles.heading}>
 						{isLogin ? 'Добро пожаловать' : 'Зарегистрироваться'}
@@ -23,6 +32,8 @@ export const Auth = () => {
 							? 'Мы скучали по тебе! Пожалуйста, введите свои данные.'
 							: 'Создайте аккаунт, чтобы продолжить.'}
 					</p>
+
+					{errorMessage && <p className={styles.error}>{errorMessage}</p>}
 				</div>
 
 				<FormFields
@@ -31,7 +42,11 @@ export const Auth = () => {
 					errors={errors}
 				/>
 
-				<FormButtons isLogin={isLogin} setType={setType} />
+				<FormButtons
+					isLogin={isLogin}
+					setType={setType}
+					isLoading={isPending}
+				/>
 			</form>
 		</div>
 	);
