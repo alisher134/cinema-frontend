@@ -1,0 +1,26 @@
+@import '@/styles/variables';
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+
+	.icon {
+		color: $primary-color;
+		width: 30px;
+		height: 30px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		.title {
+			font-weight: 500;
+		}
+
+		.name {
+			font-size: 14px;
+			color: $gray-color-100;
+		}
+	}
+}

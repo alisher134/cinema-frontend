@@ -46,7 +46,7 @@ export function useAuth() {
 		mutationFn: (data: IFormValues) => AuthService.auth(type, data),
 		onSuccess() {
 			setErrorMessage(null);
-			router.push(PUBLIC_PAGES.HOME);
+			router.push(PUBLIC_PAGES.HOME.BASE);
 			reset();
 		},
 		onError(error) {

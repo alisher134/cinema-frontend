@@ -1,0 +1,11 @@
+@import '@/styles/variables';
+
+.menu {
+	margin-top: 20px;
+	border-bottom: 2px solid $dark-color-300;
+
+	.list {
+		margin: 0;
+		padding: 0;
+	}
+}

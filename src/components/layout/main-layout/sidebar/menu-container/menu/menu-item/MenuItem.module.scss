@@ -1,0 +1,45 @@
+@import '@/styles/variables';
+
+.item {
+	margin-bottom: 25px;
+	list-style: none;
+	transition: border 150ms ease-in-out;
+	border-right: 3px solid transparent;
+
+	.link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		.icon {
+			transition: color 150ms ease-in-out;
+			color: $gray-color-100;
+		}
+
+		.name {
+			transition: color 150ms ease-in-out;
+			color: $gray-color-100;
+		}
+	}
+
+	&.active {
+		border-color: $primary-color;
+		.link {
+			.icon {
+				color: $primary-color;
+			}
+
+			.name {
+				color: $primary-color;
+			}
+		}
+	}
+
+	&:hover {
+		.link {
+			.name {
+				color: $primary-color;
+			}
+		}
+	}
+}

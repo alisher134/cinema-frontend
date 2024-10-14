@@ -1,0 +1,46 @@
+@import '@/styles/variables';
+
+.loader_container {
+	.loader {
+		width: 200px;
+		height: 30px;
+	}
+}
+
+.user_menu {
+	width: 200px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 5px;
+
+	.avatar {
+		border-radius: 100%;
+		border: 1px solid transparent;
+		transition: border 150ms ease-in-out;
+
+		&:hover {
+			border-color: $primary-color;
+		}
+	}
+
+	.username {
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		transition: color 150ms ease-in-out;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.link {
+	.icon {
+		width: 25px;
+		height: 25px;
+	}
+}

@@ -1,0 +1,28 @@
+@import '@/styles/variables';
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	z-index: 998;
+	padding: $layout;
+	width: 200px;
+	height: 100vh;
+	background-color: $dark-color-400;
+	border-right: 2px solid $dark-color-300;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: 13px;
+	}
+
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			background: $dark-color-100;
+			border-radius: 4px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: $dark-color-300;
+		}
+	}
+}

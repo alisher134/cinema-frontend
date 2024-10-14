@@ -4,6 +4,7 @@ export interface IUser {
 	updatedAt: string;
 	email: string;
 	username: string;
+	avatarPath: string;
 	role: EnumUserRole;
 }
 

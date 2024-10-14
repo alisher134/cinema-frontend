@@ -7,17 +7,17 @@ export default function robots(): MetadataRoute.Robots {
 		rules: [
 			{
 				userAgent: 'Yandex',
-				allow: PUBLIC_PAGES.HOME,
+				allow: PUBLIC_PAGES.HOME.BASE,
 				disallow: ADMIN_PAGES.HOME
 			},
 			{
 				userAgent: 'Googlebot',
-				allow: PUBLIC_PAGES.HOME,
+				allow: PUBLIC_PAGES.HOME.BASE,
 				disallow: ADMIN_PAGES.HOME
 			},
 			{
 				userAgent: '*',
-				allow: PUBLIC_PAGES.HOME,
+				allow: PUBLIC_PAGES.HOME.BASE,
 				disallow: ADMIN_PAGES.HOME
 			}
 		],

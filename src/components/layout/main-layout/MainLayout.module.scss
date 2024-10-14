@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+
+.layout {
+	position: relative;
+
+	.main {
+		min-height: 100vh;
+
+		.content {
+			margin: 0 auto;
+			padding: $layout;
+			max-width: 1380px;
+		}
+	}
+}

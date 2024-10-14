@@ -1,0 +1,45 @@
+@import '@/styles/variables';
+
+.search_input {
+	display: flex;
+	align-items: center;
+	transition: border-color 150ms ease-in-out;
+	border: 1px solid $dark-color-300;
+	border-radius: 25px;
+	background: $dark-color-200;
+	width: 550px;
+
+	.input {
+		width: 100%;
+		outline: none;
+		background: transparent;
+		border: none;
+		padding-left: 20px;
+		color: $white;
+
+		&::placeholder {
+			color: $gray-color-100;
+		}
+	}
+
+	.button {
+		cursor: pointer;
+		border-radius: 25px;
+		background: $primary-color;
+		padding: 11px 14px;
+
+		.icon {
+			color: $white;
+			width: 20px;
+			height: 20px;
+		}
+
+		&:hover {
+			background: $primary-hover-color;
+		}
+	}
+
+	&:focus-within {
+		border-color: $primary-color;
+	}
+}
